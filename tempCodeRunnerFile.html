@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGuide - 个性化旅游系统</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .page-preview {
+            width: 1200px;
+            height: 800px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="flex flex-wrap">
+        <!-- 首页 -->
+        <div class="page-preview bg-white">
+            <!-- 导航栏 -->
+            <nav class="bg-white shadow-sm">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="flex justify-between h-16">
+                        <div class="flex items-center">
+                            <div class="text-2xl font-bold text-blue-600">UGuide</div>
+                            <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                                <a href="#" class="border-b-2 border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">首页</a>
+                                <a href="#" class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">目的地</a>
+                                <a href="#" class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">行程规划</a>
+                                <a href="#" class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">旅游攻略</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">登录</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- 搜索区域 -->
+            <div class="relative">
+                <div class="absolute inset-0">
+                    <img class="w-full h-[500px] object-cover" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" alt="Banner">
+                    <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+                </div>
+                <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+                    <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">探索你的下一个目的地</h1>
+                    <p class="mt-6 text-xl text-white max-w-3xl">发现世界各地的精彩景点，规划专属于你的完美旅程</p>
+                    <div class="mt-10 max-w-xl">
+                        <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
+                            <input type="text" placeholder="搜索目的地、景点、攻略..." class="flex-1 border-0 focus:ring-0 text-gray-800 placeholder-gray-400 px-4">
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md ml-4">搜索</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 热门目的地 -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">热门目的地</h2>
+                <div class="grid grid-cols-4 gap-6">
+                    <div class="group relative rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="巴厘岛" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">巴厘岛</h3>
+                            <p class="text-sm text-gray-500">印度尼西亚</p>
+                        </div>
+                    </div>
+                    <div class="group relative rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1549144511-f099e773c147" alt="圣托里尼" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">圣托里尼</h3>
+                            <p class="text-sm text-gray-500">希腊</p>
+                        </div>
+                    </div>
+                    <div class="group relative rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1528164344705-47542687000d" alt="京都" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">京都</h3>
+                            <p class="text-sm text-gray-500">日本</p>
+                        </div>
+                    </div>
+                    <div class="group relative rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9" alt="威尼斯" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">威尼斯</h3>
+                            <p class="text-sm text-gray-500">意大利</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
